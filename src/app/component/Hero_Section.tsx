@@ -1,20 +1,22 @@
+import Image from "next/image";
+
 const HeroSection = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="flex flex-col md:flex-row items-center justify-between bg-[#2C2541] text-white min-h-screen px-10">
+      <section className="flex flex-col md:flex-row items-center justify-between bg-[#2C2541] text-white min-h-screen px-6 sm:px-8 md:px-10 lg:px-16">
         {/* Left Section */}
-        <div className="w-full md:w-1/2">
-          <h1 className="text-3xl md:text-5xl font-bold leading-snug mb-4">
+        <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug">
             The furniture brand for the future, with timeless designs
           </h1>
           <button
-  aria-label="View collection"
-  className="mt-6 px-8 py-3 bg-[#4B4A57] rounded-lg text-white hover:bg-[#6c6b7a] transition"
->
-  View collection
-</button>
-          <p className="mt-8 text-base text-gray-300">
+            aria-label="View collection"
+            className="mt-4 px-6 sm:px-8 py-3 bg-[#4B4A57] rounded-lg text-white hover:bg-[#6c6b7a] transition sm:w-full md:w-auto"
+          >
+            View collection
+          </button>
+          <p className="mt-6 text-sm sm:text-base md:text-lg text-gray-300">
             A new era in eco-friendly furniture with Avelon, the French luxury
             retail brand with nice fonts, tasteful colors, and a beautiful way to
             display things digitally using modern web technologies.
@@ -22,16 +24,13 @@ const HeroSection = () => {
         </div>
 
         {/* Right Section */}
-        <div className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0">
-          <div
-            className="bg-[#78A1AC] w-full md:w-4/5 h-[300px] md:h-[400px] flex items-center justify-center rounded-lg"
-          >
-            <img
-              src="/img-1.png"
-              alt="Chair Design"
-              className="h-1280 w-584 object-contain"
-            />
-          </div>
+        <div className="relative bg-[#78A1AC] w-full sm:w-3/4 md:w-4/5 h-[250px] sm:h-[300px] md:h-[400px] flex items-center justify-center rounded-lg mx-auto">
+          <Image
+            src="/img-1.png"
+            alt="Chair Design"
+            fill
+            className="object-contain"
+          />
         </div>
       </section>
 
@@ -67,22 +66,46 @@ const HeroSection = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="text-center">
-            <img src="/img-1.png" alt="The Dandy Chair" className="w-full h-auto mb-4 rounded" />
+            <Image
+              src="/img-1.png"
+              alt="The Dandy Chair"
+              width={400}
+              height={400}
+              className="w-full h-auto mb-4 rounded"
+            />
             <h3 className="font-semibold">The Dandy Chair</h3>
             <p className="text-gray-500">£250</p>
           </div>
           <div className="text-center">
-            <img src="/gamly.png" alt="Rustic Vase Set" className="w-full h-auto mb-4 rounded" />
+            <Image
+              src="/gamly.png"
+              alt="Rustic Vase Set"
+              width={400}
+              height={400}
+              className="w-full h-auto mb-4 rounded"
+            />
             <h3 className="font-semibold">Rustic Vase Set</h3>
             <p className="text-gray-500">£95</p>
           </div>
           <div className="text-center">
-            <img src="/bottle.png" alt="The Silky Vase" className="w-full h-auto mb-4 rounded" />
+            <Image
+              src="/bottle.png"
+              alt="The Silky Vase"
+              width={400}
+              height={400}
+              className="w-full h-auto mb-4 rounded"
+            />
             <h3 className="font-semibold">The Silky Vase</h3>
             <p className="text-gray-500">£125</p>
           </div>
           <div className="text-center">
-            <img src="/Parent.png" alt="The Lucy Lamp" className="w-full h-auto mb-4 rounded" />
+            <Image
+              src="/Parent.png"
+              alt="The Lucy Lamp"
+              width={400}
+              height={400}
+              className="w-full h-auto mb-4 rounded"
+            />
             <h3 className="font-semibold">The Lucy Lamp</h3>
             <p className="text-gray-500">£399</p>
           </div>
@@ -96,17 +119,35 @@ const HeroSection = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center">
-            <img src="/sofa.png" alt="The Poplar Suede Sofa" className="w-full h-auto mb-4 rounded" />
+            <Image
+              src="/sofa.png"
+              alt="The Poplar Suede Sofa"
+              width={400}
+              height={400}
+              className="w-full h-auto mb-4 rounded"
+            />
             <h3 className="font-semibold">The Poplar Suede Sofa</h3>
             <p className="text-gray-500">£980</p>
           </div>
           <div className="text-center">
-            <img src="/img-1.png" alt="The Dandy Chair" className="w-full h-auto mb-4 rounded" />
+            <Image
+              src="/img-1.png"
+              alt="The Dandy Chair"
+              width={400}
+              height={400}
+              className="w-full h-auto mb-4 rounded"
+            />
             <h3 className="font-semibold">The Dandy Chair</h3>
             <p className="text-gray-500">£250</p>
           </div>
           <div className="text-center">
-            <img src="/chair.png" alt="The Dandy Chair Alt" className="w-full h-auto mb-4 rounded" />
+            <Image
+              src="/chair.png"
+              alt="The Dandy Chair Alt"
+              width={400}
+              height={400}
+              className="w-full h-auto mb-4 rounded"
+            />
             <h3 className="font-semibold">The Dandy Chair</h3>
             <p className="text-gray-500">£250</p>
           </div>
@@ -137,8 +178,13 @@ const HeroSection = () => {
             Get in touch
           </button>
         </div>
-        <div className="w-full md:w-1/2">
-          <img src="/soaf.png" alt="Brand Story" className="w-full h-auto rounded-lg" />
+        <div className="w-full md:w-1/2 relative h-64 md:h-auto">
+          <Image
+            src="/soaf.png"
+            alt="Brand Story"
+            fill
+            className="object-contain rounded-lg"
+          />
         </div>
       </section>
 

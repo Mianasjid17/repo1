@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from 'next/image';
 const Page2HeroSection = () => {
   return (
     <div className="bg-[#F3EDE8] text-gray-800 min-h-screen">
@@ -20,7 +20,7 @@ const Page2HeroSection = () => {
 
         {/* Right Section */}
         <div className="w-full md:w-1/2 mt-10 md:mt-0">
-          <img
+          <Image
             src="/table.png"
             alt="Luxury Homeware"
             className="rounded-lg shadow-md"
@@ -36,7 +36,7 @@ const Page2HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Feature 1 */}
           <div className="flex flex-col items-center text-center">
-            <img src="/path-to-icon1.png" alt="Feature 1" className="w-16 h-16 mb-4" />
+          <Image src="/path-to-icon1.png" alt="Feature 1" className="w-16 h-16 mb-4" />
             <h3 className="font-bold text-lg">Next day as standard</h3>
             <p className="text-gray-600">
               Order before 5 pm and get your order the next day as standard.
@@ -45,7 +45,7 @@ const Page2HeroSection = () => {
 
           {/* Feature 2 */}
           <div className="flex flex-col items-center text-center">
-            <img src="/path-to-icon2.png" alt="Feature 2" className="w-16 h-16 mb-4" />
+          <Image src="/path-to-icon2.png" alt="Feature 2" className="w-16 h-16 mb-4" />
             <h3 className="font-bold text-lg">Made by true artisans</h3>
             <p className="text-gray-600">
               Handmade crafted goods made with real passion and craftsmanship.
@@ -54,7 +54,7 @@ const Page2HeroSection = () => {
 
           {/* Feature 3 */}
           <div className="flex flex-col items-center text-center">
-            <img src="/path-to-icon3.png" alt="Feature 3" className="w-16 h-16 mb-4" />
+          <Image src="/path-to-icon3.png" alt="Feature 3" className="w-16 h-16 mb-4" />
             <h3 className="font-bold text-lg">Unbeatable prices</h3>
             <p className="text-gray-600">
               For the materials and quality, you won’t find better prices anywhere.
@@ -63,7 +63,7 @@ const Page2HeroSection = () => {
 
           {/* Feature 4 */}
           <div className="flex flex-col items-center text-center">
-            <img src="/path-to-icon4.png" alt="Feature 4" className="w-16 h-16 mb-4" />
+          <Image src="/path-to-icon4.png" alt="Feature 4" className="w-16 h-16 mb-4" />
             <h3 className="font-bold text-lg">Recycled packaging</h3>
             <p className="text-gray-600">
               We use 100% recycled packaging to ensure our footprint is manageable.
@@ -78,28 +78,28 @@ const Page2HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Product 1 */}
           <div className="text-center">
-            <img src="/img-1.png" alt="Chair" className="rounded-lg mb-4" />
+          <Image src="/img-1.png" alt="Chair" className="rounded-lg mb-4" />
             <h3 className="font-bold">The Dandy Chair</h3>
             <p className="text-gray-600">£250</p>
           </div>
 
           {/* Product 2 */}
           <div className="text-center">
-            <img src="/gamly.png" alt="Rustic Vase Set" className="rounded-lg mb-4" />
+          <Image src="/gamly.png" alt="Rustic Vase Set" className="rounded-lg mb-4" />
             <h3 className="font-bold">Rustic Vase Set</h3>
             <p className="text-gray-600">£55</p>
           </div>
 
           {/* Product 3 */}
           <div className="text-center">
-            <img src="/bottle.png" alt="The Silky Vase" className="rounded-lg mb-4" />
+          <Image src="/bottle.png" alt="The Silky Vase" className="rounded-lg mb-4" />
             <h3 className="font-bold">The Silky Vase</h3>
             <p className="text-gray-600">£125</p>
           </div>
 
           {/* Product 4 */}
           <div className="text-center">
-            <img src="/Parent.png" alt="The Lucy Lamp" className="rounded-lg mb-4" />
+          <Image src="/Parent.png" alt="The Lucy Lamp" className="rounded-lg mb-4" />
             <h3 className="font-bold">The Lucy Lamp</h3>
             <p className="text-gray-600">£399</p>
           </div>
